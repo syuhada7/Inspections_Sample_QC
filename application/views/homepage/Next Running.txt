@@ -1,0 +1,11 @@
+<div class="form-group">
+  <div class="col-md">
+    <label for="part_number">Part Number</label>
+      <select class="form-control select2" style="width: 100%;" name="part_number">
+        <option>---</option>
+          <?php foreach ($row as $key => $val) { ?>
+            <option value="<?= $val->part_name ?>"><?= $val->part_name ?></option>
+          <?php } ?>
+      </select>
+  </div>
+</div>
