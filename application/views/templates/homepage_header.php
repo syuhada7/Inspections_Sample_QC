@@ -46,7 +46,38 @@
         <div class="container">
           <div class="navbar-header">
             <a href="#" class="navbar-brand"><b>PT. HABDONG INDONESIA</b> - QC Inspections</a>
+            </button>
           </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Master Data<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Part Number</a></li>
+                  <li><a href="#">PIC</a></li>
+                  <li><a href="#">History Scan</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <!-- The user icon in the navbar-->
+                  <i class="fa fa-user"></i>
+                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <span class="hidden-xs">Login</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-custom-menu -->
         </div>
         <!-- /.container-fluid -->
       </nav>
