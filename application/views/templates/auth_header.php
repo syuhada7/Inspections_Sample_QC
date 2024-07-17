@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="refresh" content="60">
   <title>HDI | QC Inspections</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -63,22 +64,16 @@
           <!-- /.navbar-collapse -->
           <!-- Navbar Right Menu -->
           <div class="navbar-custom-menu">
-            <ul class="dropdown-menu">
-              <!-- The user image in the menu -->
-              <li class="user-header">
-                <i class="img-circle" alt="User Image"></i>
-                <p>
-
-                </p>
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Change Password</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
+            <ul class="nav navbar-nav">
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="<?= base_url('Auth/input') ?>">
+                  <!-- The user icon in the navbar-->
+                  <i class="fa fa-user"></i>
+                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <span class="hidden-xs">Login</span>
+                </a>
               </li>
             </ul>
           </div>

@@ -12,9 +12,9 @@ class Auth extends CI_Controller
   public function index()
   {
     // $data['row'] = $this->Inspections_model->get();
-    $this->load->view('templates/homepage_header');
+    $this->load->view('templates/auth_header');
     $this->load->view('homepage/index');
-    $this->load->view('templates/homepage_footer');
+    $this->load->view('templates/auth_footer');
   }
 
   public function input()
