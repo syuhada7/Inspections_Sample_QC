@@ -31,12 +31,6 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <style>
-    #next {
-      display: none;
-      /* Mulai dengan tombol/link tersembunyi */
-    }
-  </style>
 </head>
 
 <body class="hold-transition skin-red layout-top-nav">
@@ -45,7 +39,7 @@
       <nav class="navbar navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <a href="#" class="navbar-brand"><b>PT. HABDONG INDONESIA</b> - QC Inspections</a>
+            <a href="<?= base_url('Auth') ?>" class="navbar-brand"><b>PT. HABDONG INDONESIA</b> - QC Inspections</a>
             </button>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,11 +48,10 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Master Data<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Part Number</a></li>
-                  <li><a href="#">PIC</a></li>
-                  <li><a href="#">History Scan</a></li>
+                  <li><a href="<?= base_url('Auth/view_part') ?>">Part Number</a></li>
                 </ul>
               </li>
+              <li><a href="<?= base_url('Auth/view_history') ?>">History Scan</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -68,7 +61,7 @@
               <!-- User Account Menu -->
               <li class="dropdown user user-menu">
                 <!-- Menu Toggle Button -->
-                <a href="<?= base_url('Auth/input') ?>">
+                <a href="<?= base_url('Homepage') ?>">
                   <!-- The user icon in the navbar-->
                   <i class="fa fa-user"></i>
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->

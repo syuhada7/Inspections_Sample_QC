@@ -13,15 +13,15 @@ class Auth extends CI_Controller
   {
     // $data['row'] = $this->Inspections_model->get();
     $this->load->view('templates/auth_header');
-    $this->load->view('homepage/index');
+    $this->load->view('auth/index');
     $this->load->view('templates/auth_footer');
   }
 
-  public function input()
+  public function view_part()
   {
-    $data['row'] = $this->Inspections_model->get();
-    $this->load->view('templates/homepage_header');
-    $this->load->view('homepage/input', $data);
-    $this->load->view('templates/homepage_footer');
+    $data['row'] = $this->Inspections_model->get_v_part();
+    $this->load->view('templates/auth_header');
+    $this->load->view('auth/v_part', $data);
+    $this->load->view('templates/auth_footer');
   }
 }

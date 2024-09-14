@@ -44,7 +44,7 @@
       <nav class="navbar navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <a href="#" class="navbar-brand"><b>PT. HABDONG INDONESIA</b> - QC Inspections</a>
+            <a href="<?= base_url('Homepage') ?>" class="navbar-brand"><b>PT. HABDONG INDONESIA</b> - QC Inspections</a>
             </button>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,32 +53,34 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Master Data<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Part Number</a></li>
-                  <li><a href="#">PIC</a></li>
-                  <li><a href="#">History Scan</a></li>
+                  <li><a href="<?= base_url('Homepage/view_customer') ?>">Customer</a></li>
+                  <li><a href="<?= base_url('Homepage/view_part') ?>">Part Number</a></li>
+                  <li><a href="<?= base_url('Homepage/view_pic') ?>">PIC</a></li>
                 </ul>
               </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inspections<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="<?= base_url('Homepage/') ?>">All Inspect</a></li>
+                  <li><a href="<?= base_url('Homepage/') ?>">Sample</a></li>
+                </ul>
+              </li>
+              <li><a href="<?= base_url('Homepage/view_history') ?>">History Scan</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
           <!-- Navbar Right Menu -->
           <div class="navbar-custom-menu">
-            <ul class="dropdown-menu">
-              <!-- The user image in the menu -->
-              <li class="user-header">
-                <i class="img-circle" alt="User Image"></i>
-                <p>
-
-                </p>
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Change Password</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
+            <ul class="nav navbar-nav">
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="<?= base_url('Auth') ?>">
+                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <span class="hidden-xs">Sign Out </span>
+                  <!-- The user icon in the navbar-->
+                  <i class="fa fa-arrow-right"></i>
+                </a>
               </li>
             </ul>
           </div>
