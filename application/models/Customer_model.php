@@ -10,4 +10,15 @@ class Customer_model extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
+
+    public function save($data)
+    {
+        return $this->db->insert('customer', $data);
+    }
+
+    public function delete($where)
+    {
+        $this->db->where($where);
+        $this->db->delete('customer');
+    }
 }

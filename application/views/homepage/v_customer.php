@@ -24,6 +24,7 @@
                       <th>Name Customer</th>
                       <th>Telephone</th>
                       <th>Address</th>
+                      <th>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -35,6 +36,7 @@
                         <td><?= $key->namacus; ?></td>
                         <td><?= $key->telpon; ?></td>
                         <td><?= $key->alamat; ?></td>
+                        <td><a class="btn btn-sm btn-danger" href="<?= site_url('homepage/delete_cus/' . $key->id_customer); ?>"><i class="fa fa-trash"></i> Delete</a></td>
                       </tr>
                     <?php } ?>
                   </tbody>
@@ -60,7 +62,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <form action="<?= base_url('/add'); ?>" method="POST">
+              <form action="<?= base_url('Homepage/view_customer'); ?>" method="POST">
                 <div class="form-group">
                   <div class="col-lg">
                     <label>Name Customer *</label>
@@ -81,7 +83,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-paper-plane"></i> Save</button>
+              <button type="submit" id="save" name="save" class="btn btn-sm btn-primary"><i class="fa fa-paper-plane"></i> Save</button>
               <button type="reset" class="btn btn-sm btn-default"><i class="fa fa-undo"></i> Reset</button>
             </div>
             </form>
